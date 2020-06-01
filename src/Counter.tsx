@@ -5,10 +5,10 @@ import Button from "./Button";
 function Counter(props: CounterType) {
     let incDisabled = props.currentValue === props.maxValue;
     let resetDisabled = props.currentValue === props.startValue;
+    let displayValueStyle = incDisabled ? "lastValue" : "value";
     let increment = () => props.setCurrentValue(props.currentValue + 1);
     let resetValue = () => props.setCurrentValue(props.startValue);
     let setCounter = () => props.setCounter(false);
-    let displayValueStyle = props.currentValue === props.maxValue ? "lastValue" : "value";
 
     return (
         <div className={"container"}>
