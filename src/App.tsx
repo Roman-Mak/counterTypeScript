@@ -17,8 +17,7 @@ function App() {
                                currentValue={currentValue}
                                startValue={startValue}
                                setCounter={setCounter}
-                               setCurrentValue={setCurrentValue}
-                    />
+                               setCurrentValue={setCurrentValue}/>
                     : <Settings maxValue={maxValue}
                                 startValue={startValue}
                                 setCounter={setCounter}

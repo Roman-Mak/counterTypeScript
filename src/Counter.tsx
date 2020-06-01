@@ -11,14 +11,18 @@ function Counter(props: CounterType) {
     let displayValueStyle = props.currentValue === props.maxValue ? "lastValue" : "value";
 
     return (
-        <div className="container">
+        <div className={"container"}>
             <div className={"display"}>
                 <span className={displayValueStyle}>{props.currentValue}</span>
             </div>
-            <div>
-                <Button name={"INC"} disabled={incDisabled} onClickFn={increment}/>
-                <Button name={"RESET"} disabled={resetDisabled} onClickFn={resetValue}/>
-                <Button name={"SET"} disabled={false} onClickFn={setCounter}/>
+            <div className={"buttons-container"}>
+                <div className={"counter-buttons"}>
+                    <Button name={"INC"} disabled={incDisabled} onClickFn={increment}/>
+                    <Button name={"RESET"} disabled={resetDisabled} onClickFn={resetValue}/>
+                </div>
+                <div className={"settings-button"}>
+                    <Button name={"SETTINGS"} disabled={false} onClickFn={setCounter}/>
+                </div>
             </div>
         </div>
     );

@@ -31,6 +31,27 @@
     justify-content: center;
 }
 
+.buttons-container {
+    margin-top: 50px;
+}
+
+.counter-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.settings-button {
+    margin-top: 30px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+
 .value {
   font-size: 36px;
 }
@@ -38,4 +59,14 @@
 .lastValue {
     color: red;
     font-size: 40px;
+}
+
+.wrongValue {
+    color: red;
+}
+
+.errorInputStyle {
+    border: 2px solid red;
+    background-color: #ff666d;
+    border-radius: 2px;
 }
